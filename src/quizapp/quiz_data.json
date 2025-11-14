@@ -1,0 +1,98 @@
+{
+  "easy": [
+    {
+      "question": "What is supervised learning?",
+      "options": [
+        "Training a model using labeled data",
+        "Training a model without labels",
+        "A type of reinforcement learning",
+        "A method to preprocess data"
+      ],
+      "answer": "a"
+    },
+    {
+      "question": "Which loss is commonly used for binary classification?",
+      "options": [
+        "Mean squared error",
+        "Binary cross-entropy",
+        "Cosine similarity",
+        "Hinge loss for regression"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "In neural networks, what does 'epoch' refer to?",
+      "options": [
+        "Number of features",
+        "One forward pass only",
+        "One full pass over the training data",
+        "Number of hidden layers"
+      ],
+      "answer": "c"
+    }
+  ],
+  "medium": [
+    {
+      "question": "What is the vanishing gradient problem?",
+      "options": [
+        "Gradients become too large during training",
+        "Gradients become very small making training slow",
+        "Model overfits to training data",
+        "A data preprocessing issue"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "Which activation helps mitigate vanishing gradients?",
+      "options": [
+        "Sigmoid",
+        "Tanh",
+        "ReLU",
+        "Softmax"
+      ],
+      "answer": "c"
+    },
+    {
+      "question": "What is 'dropout' used for?",
+      "options": [
+        "Data augmentation",
+        "Preventing overfitting by random neuron removal",
+        "Increasing model capacity",
+        "Optimizing hyperparameters"
+      ],
+      "answer": "b"
+    }
+  ],
+  "hard": [
+    {
+      "question": "What is backpropagation used to compute?",
+      "options": [
+        "Training data labels",
+        "Model architecture",
+        "Gradients of the loss w.r.t. parameters",
+        "Inference time predictions"
+      ],
+      "answer": "c"
+    },
+    {
+      "question": "Which optimizer adapts learning rates per-parameter using running averages of gradients?",
+      "options": [
+        "SGD without momentum",
+        "Adam",
+        "L-BFGS",
+        "Vanilla gradient descent"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "In convolutional neural networks, what does 'stride' control?",
+      "options": [
+        "Depth of convolution filters",
+        "How far the filter moves each step",
+        "Number of filters",
+        "Type of non-linearity"
+      ],
+      "answer": "b"
+    }
+  ]
+}
