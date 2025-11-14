@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "quiz-demo-poetry"
+version = "0.1.0"
+description = "A small CLI quiz about Machine Learning basics and Deep Learning built with Poetry"
+authors = ["Student <student@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [ { include = "quizapp", from = "src" } ]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+
+[tool.poetry.scripts]
+quizapp = "quizapp.cli:main"
+
+[[tool.poetry.include]]
+path = "src/quizapp/quiz_data.json"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
