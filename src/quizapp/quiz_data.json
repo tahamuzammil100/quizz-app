@@ -16,7 +16,7 @@
         "Mean squared error",
         "Binary cross-entropy",
         "Cosine similarity",
-        "Hinge loss for regression"
+        "Hinge loss"
       ],
       "answer": "b"
     },
@@ -29,6 +29,76 @@
         "Number of hidden layers"
       ],
       "answer": "c"
+    },
+    {
+      "question": "What is a feature in machine learning?",
+      "options": [
+        "An output label",
+        "An input variable used for prediction",
+        "A type of model",
+        "A hyperparameter"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "Which metric is appropriate for classification accuracy?",
+      "options": [
+        "Mean Absolute Error",
+        "Accuracy",
+        "R-squared",
+        "BLEU"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "What does 'overfitting' mean?",
+      "options": [
+        "Model performs well on new data",
+        "Model performs poorly on training data",
+        "Model memorises training data and fails on unseen data",
+        "Model uses too little data"
+      ],
+      "answer": "c"
+    },
+    {
+      "question": "Which of these is a type of unsupervised learning?",
+      "options": [
+        "Regression",
+        "Classification",
+        "Clustering",
+        "Reinforcement learning"
+      ],
+      "answer": "c"
+    },
+    {
+      "question": "What is a confusion matrix used for?",
+      "options": [
+        "Measuring model size",
+        "Visualising classification performance",
+        "Choosing hyperparameters",
+        "Scaling features"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "Which technique scales features to have zero mean and unit variance?",
+      "options": [
+        "Min-max scaling",
+        "Standardization (Z-score)",
+        "One-hot encoding",
+        "PCA"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "What does 'cross-validation' help with?",
+      "options": [
+        "Encoding categorical variables",
+        "Estimating model generalization performance",
+        "Increasing dataset size",
+        "Speeding up training"
+      ],
+      "answer": "b"
     }
   ],
   "medium": [
@@ -61,6 +131,76 @@
         "Optimizing hyperparameters"
       ],
       "answer": "b"
+    },
+    {
+      "question": "What does 'regularization' generally aim to do?",
+      "options": [
+        "Increase model complexity",
+        "Prevent overfitting",
+        "Reduce dataset size",
+        "Change the activation function"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "Which regularization adds the L2 penalty to the loss?",
+      "options": [
+        "Lasso",
+        "Ridge",
+        "Dropout",
+        "Early stopping"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "What is early stopping used for?",
+      "options": [
+        "Stopping data collection",
+        "Halting training when validation performance stops improving",
+        "Reducing model size after training",
+        "Normalizing inputs"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "Which technique reduces dimensionality while retaining variance?",
+      "options": [
+        "PCA",
+        "One-hot encoding",
+        "Gradient clipping",
+        "Batch normalization"
+      ],
+      "answer": "a"
+    },
+    {
+      "question": "What is batch normalization used for?",
+      "options": [
+        "Preventing vanishing gradients by normalizing layer inputs",
+        "Increasing dataset size",
+        "Reducing number of layers",
+        "Converting categorical to numeric"
+      ],
+      "answer": "a"
+    },
+    {
+      "question": "Which method is used to find hyperparameters automatically?",
+      "options": [
+        "Backpropagation",
+        "Grid search or random search",
+        "Gradient descent",
+        "Cross-entropy"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "What does 'precision' measure in classification?",
+      "options": [
+        "Correct positive predictions over all predicted positives",
+        "Correct positive predictions over all actual positives",
+        "Overall accuracy",
+        "Model calibration"
+      ],
+      "answer": "a"
     }
   ],
   "hard": [
@@ -93,6 +233,76 @@
         "Type of non-linearity"
       ],
       "answer": "b"
+    },
+    {
+      "question": "What is gradient clipping used for?",
+      "options": [
+        "Increase gradients during training",
+        "Prevent exploding gradients by capping their norm",
+        "Normalize inputs",
+        "Reduce model capacity"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "What does the term 'transfer learning' mean?",
+      "options": [
+        "Training from scratch on each task",
+        "Using pretrained models and fine-tuning for a new task",
+        "Transferring data between hosts",
+        "A form of unsupervised learning"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "Which loss is commonly used for multi-class classification?",
+      "options": [
+        "Binary cross-entropy",
+        "Categorical cross-entropy (softmax)",
+        "Mean squared error",
+        "Hinge loss"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of an embedding layer in NLP models?",
+      "options": [
+        "Convert text into dense numeric vectors representing semantics",
+        "Compress the model",
+        "Perform tokenization",
+        "Calculate evaluation metrics"
+      ],
+      "answer": "a"
+    },
+    {
+      "question": "Which architecture is commonly used for sequence-to-sequence tasks with attention?",
+      "options": [
+        "CNN without attention",
+        "RNN encoder-decoder with attention",
+        "KNN classifier",
+        "Linear regression"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "What is 'beam search' used for?",
+      "options": [
+        "Optimizing continuous functions",
+        "Searching for likely output sequences during decoding",
+        "Data shuffling",
+        "Regularization"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "What does 'attention' mechanism allow models to do?",
+      "options": [
+        "Focus on different parts of the input when generating each output",
+        "Reduce dataset size",
+        "Increase the learning rate",
+        "Remove the need for backpropagation"
+      ],
+      "answer": "a"
     }
   ]
 }
