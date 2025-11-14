@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "quiz-demo-poetry"
+name = "quizz-app"
 version = "0.1.0"
 description = "A small CLI quiz about Machine Learning basics and Deep Learning built with Poetry"
-authors = ["Student <student@example.com>"]
+authors = ["tahamuzammil100@gmail.com"]
 license = "MIT"
 readme = "README.md"
-packages = [ { include = "quizapp", from = "src" } ]
+packages = [{ include = "quizapp", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
