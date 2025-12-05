@@ -4,10 +4,27 @@ This is a small command-line quiz about Machine Learning basics and Deep Learnin
 
 ## Project structure
 
-- `pyproject.toml` – Poetry project configuration and metadata
-- `src/quizapp/` – package source (CLI and data)
-  - `quizapp/cli.py` – command-line entry point
-  - `quizapp/quiz_data.json` – questions (easy/medium/hard)
+   ```
+   .
+   ├── src/quizapp/          # Application source code
+   │   ├── cli.py            # Main quiz application
+   │   └── quiz_data.json    # Quiz questions
+   ├── tests/                # Test files
+   ├── docs/                 # Documentation
+   ├── pyproject.toml        # Project configuration
+   └── README.md             # This file
+   ```
+
+   ## Documentation
+
+   API documentation is available in the `docs/` folder.
+    To generate/view the documentation:
+
+   ```bash
+   cd docs
+   make html
+   open build/html/index.html
+   ```
 
 ## Requirements (developer)
 
@@ -60,6 +77,21 @@ poetry build
 ```
 
 Artifacts will be created under `dist/` (wheel and sdist).
+
+## Testing
+
+  Run the test suite with:
+
+```bash
+  poetry run pytest
+```
+
+
+  To run a specific test file:
+
+```bash
+  poetry run pytest tests/test_cli.py
+```
 
 ## Notes for reviewers / graders
 
