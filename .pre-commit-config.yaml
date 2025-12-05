@@ -8,8 +8,10 @@ repos:
       # Run the linter
       - id: ruff
         args: [--fix]
+        exclude: ^docs/
       # Run the formatter
       - id: ruff-format
+        exclude: ^docs/
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
@@ -17,15 +19,22 @@ repos:
       # Prevent large files from being committed
       - id: check-added-large-files
         args: ['--maxkb=500']
+        exclude: ^docs/
       # Check for files that would conflict in case-insensitive filesystems
       - id: check-case-conflict
+        exclude: ^docs/
       # Check for merge conflicts
       - id: check-merge-conflict
+        exclude: ^docs/
       # Check YAML syntax
       - id: check-yaml
+        exclude: ^docs/
       # Check JSON syntax
       - id: check-json
+        exclude: ^docs/
       # Ensure files end with a newline
       - id: end-of-file-fixer
+        exclude: ^docs/
       # Trim trailing whitespace
       - id: trailing-whitespace
+        exclude: ^docs/

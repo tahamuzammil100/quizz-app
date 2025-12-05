@@ -12,7 +12,6 @@ venv/
 
 # packaging
 dist/
-build/
 *.egg-info/
 
 # IDEs

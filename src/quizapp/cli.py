@@ -16,7 +16,16 @@ logger = logging.getLogger(__name__)
 
 
 def load_questions():
-    """Load quiz questions from package JSON data."""
+    """
+    Loads questions for quizz from JSON file. First it will attempts to load
+    data file from the package resources, if falls than load from local file path.
+
+    Returns:
+        dict: A dictionary with difficulty levels as keys ('easy', 'medium',
+            'hard') and lists of question dictionaries as values. Each question
+            contains 'question', 'options', and 'answer' key-value pairs.
+    """
+
     logger.info("Loading quiz questions")
     try:
         data_text = files("quizapp").joinpath("quiz_data.json").read_text(encoding="utf-8")
@@ -29,7 +38,20 @@ def load_questions():
 
 
 def ask_question(q):
-    """Ask a single question and return the user's answer."""
+    """
+    Displays a multiple-choice question with four options (a, b, c, d) and
+    repeatedly prompts the user for input until a valid answer out of (a, b, c, d)
+    is not provided.
+
+    Args:
+        q (dict): A question dictionary containing:
+            - 'question' (str): The question text to display
+            - 'options' (list): A list of four answer options
+            - 'answer' (str): The correct answer ('a', 'b', 'c', or 'd')
+
+    Returns:
+        str: The user's answer as a single character ('a', 'b', 'c', or 'd').
+    """
     print("\n" + q["question"])
     choices = q["options"]
     labels = ["a", "b", "c", "d"]
@@ -44,7 +66,16 @@ def ask_question(q):
 
 
 def main():
-    """Main entry point for the quiz application."""
+    """
+    The user is presented with three difficulty options (easy, medium and hard).
+    If an invalid selection is made out of hese, application will pick default and
+    set difficulty to 'easy'. If no questions are found for the selected difficulty,
+    the application exits with an error.
+
+    Returns:
+        None
+
+    """
 
     logger.info("Welcome to the ML / Deep Learning quiz!")
     questions = load_questions()
