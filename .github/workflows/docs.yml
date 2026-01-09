@@ -27,12 +27,12 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install
-        poetry add --group dev sphinx sphinx-rtd-theme
+        pip install sphinx sphinx-rtd-theme
 
     - name: Build documentation
       run: |
         cd docs
-        poetry run sphinx-build -b html source build/html
+        sphinx-build -b html source build/html
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
